@@ -1,0 +1,52 @@
+# Table of contents
+
+* [Ultimate Tutorial 3](README.md)
+
+## Introduction
+
+* [Introduction](introduction/introduction.md)
+* [Getting Started](introduction/getting-started.md)
+* [Using Event Assembler](introduction/using-event-assembler.md)
+* [Technicalities](introduction/technicalities.md)
+* [Github](introduction/github.md)
+
+## Editing
+
+* [Tables](editing/csv-tables/README.md)
+  * [Nightmare Modules and CSVs](editing/csv-tables/nightmare-modules-and-csvs.md)
+  * [Extending and Repointing](editing/csv-tables/extending-and-repointing.md)
+* [Text](editing/text.md)
+* [Graphics](editing/graphics/README.md)
+  * [Mugs and Class Cards](editing/graphics/mugs-and-class-cards.md)
+  * [Battle Animations](editing/graphics/battle-animations.md)
+  * [Map Sprites](editing/graphics/map-sprites.md)
+  * [Character Palettes](editing/graphics/character-palettes.md)
+  * [Item Icons](editing/graphics/item-icons.md)
+  * [Spell Animations](editing/graphics/spell-animations.md)
+  * [Tilesets](editing/graphics/tilesets.md)
+  * [Backgrounds](editing/graphics/backgrounds.md)
+  * [Battle Screen](editing/graphics/battle-screen.md)
+  * [Title Screen](editing/graphics/title-screen.md)
+  * [Menus and UI](editing/graphics/menus-and-ui.md)
+* [Events](editing/events/README.md)
+  * [Raws \(Eventcodes\)](editing/events/raws-eventcodes.md)
+  * [UNIT Blocks](editing/events/unit-blocks.md)
+  * [EventIDs \(Flags\)](editing/events/eventids-flags.md)
+  * [Save Slots \(SVAL\)](editing/events/save-slots-sval.md)
+  * [Turn Based Events](editing/events/turn-based-events.md)
+  * [Location Based Events](editing/events/location-based-events.md)
+  * [Character Based Events](editing/events/character-based-events.md)
+  * [Misc Based Events](editing/events/misc-based-events.md)
+  * [Traps](editing/events/traps.md)
+  * [EVBITs](editing/events/evbits.md)
+  * [Making Event Macros](editing/events/making-event-macros.md)
+  * [ASMCs](editing/events/asmcs.md)
+* [Maps](editing/maps.md)
+* [Engine Hacks \(ASM\)](editing/engine-hacks-asm/README.md)
+  * [Opcodes](editing/engine-hacks-asm/opcodes.md)
+  * [Registers](editing/engine-hacks-asm/registers.md)
+  * [Hooking and jumpToHack](editing/engine-hacks-asm/hooking-and-jumptohack.md)
+  * [no$GBA \(Debugging\)](editing/engine-hacks-asm/nousdgba-debugging.md)
+  * [Making Custom Skills](editing/engine-hacks-asm/making-custom-skills.md)
+* [Music](editing/music.md)
+
