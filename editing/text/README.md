@@ -38,5 +38,5 @@ Unlike a direct ID, which has the TextID provided explicitly, the sequential ID 
 
 Much like the overall ROM buildfile, the text buildfile would be horribly cluttered if every text entry were to be contained within one singular file. Luckily, **the \#include command is fully functional** within the text buildfile, so it is recommended as before to use it liberally to organize your text entries.
 
-Also like your ROM buildfile, the text buildfile must be recompiled after any changes. The entirety of the new text written, as well as all the definitions created from naming text entries, will be included within _"Install Text Data.event",_ so be sure to \#include that file in your buildfile.
+Also like your ROM buildfile, **the text buildfile must be recompiled after any changes**. You can compile it by running the TextProcess program, or a batch script which calls it. The entirety of the new text written, as well as all the definitions created from naming text entries, will be included within _"Install Text Data.event",_ so be sure to \#include that file in your buildfile.
 
