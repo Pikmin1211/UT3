@@ -47,7 +47,7 @@ Now, let's go ahead and run MAKE HACK. And, viola, you should now have your alte
 
 ## Using your Hex Editor
 
-Let's take a look at what we changed exactly. How do we do that? Well, we break out a hex editor of course! Open your clean ROM in your hex editor and make note of the very first value there - **0x2E**. Fascinating. Now, lets look at FE8\_hack.gba. As you might have guessed by now, it's in fact not **0x2E**, but rather **0x0**. So, I guess that's what that **BYTE 0x0** nonsense was about. Maybe I feel like actually playing Sacred Stones today, so let's make the ROM actually work this time. Here's where I ask you, the reader, to stop and make a guess about what you need to do to achieve that.  
+Let's take a look at what we changed exactly. How do we do that? Well, we break out a hex editor of course! Open your clean ROM in your hex editor and make note of the very first value there - **0x2E**. Fascinating. Now, lets look at FE8\_hack.gba. As you might have guessed by now, it's in fact not **0x2E**, but rather **0x00**. So, I guess that's what that **BYTE 0x0** nonsense was about. Maybe I feel like actually playing Sacred Stones today, so let's make the ROM actually work this time. Here's where I ask you, the reader, to stop and make a guess about what you need to do to achieve that.  
 ...  
 If your guess was to change **BYTE 0x0** to **BYTE 0x2E** in ROM Buildfile.event, you'd be absolutely right! Let's do that. Now we open our ROM, and... nothing. Weird. That's because editing the files doesn't actually do anything - at least, not until we recompile! Let's run MAKE HACK and then try again. There we go. 
 

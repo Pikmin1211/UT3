@@ -1,0 +1,28 @@
+# Control Codes
+
+## Default Control Codes
+
+\[X\] - Ends the text entry.  
+\[NL\] - Starts a new line.  
+\[A\] - Prompts for an A press before continuing.  
+\[OpenPosition\] - Set the current position to the specified one.  
+\[LoadFace\] - Load a character portrait at the current position. Follow this command with the ID of the portrait to be loaded and \[0x1\] \(the ID +0x100\). For example, to load portrait ID 0x2, use \[LoadFace\]\[0x2\]\[0x1\].  
+\[ClearFace\] - Remove the character portrait at the current position.  
+\[ToggleSmile\] - Set the character portrait at the current position to smile or to stop smiling.  
+\[ToggleMouthMove\] - Set the character portrait at the current position to stop or continue moving their mouth while speaking.  
+\[CloseEyes\] - Set the character portrait at the current position to close or to stop closing their eyes.
+
+## Positional Control Codes
+
+The \[OpenPosition\] code expects one of 8 positions on the screen for loading character portraits, speech bubbles, etc. The possible positions, in order of their appearance on screen from left to right, are: FarFarLeft, FarLeft, MidLeft, Left, Right, MidRight, FarRight, FarFarRight. For example, to set the current position to the MidLeft of the screen, use \[OpenMidLeft\].
+
+## Custom Control Codes \(ParseDefinitions.txt\)
+
+Certain commands, such as loading character portraits, can be cumbersome since they use several commands at once or require you to remember things such as portrait IDs. To avoid this, you can define your own control codes using the file "ParseDefinitions.txt". To define a new control code, simply write the desired code followed by an = and the expected output. For example, here is a custom code to load Eirika's portrait at the current position.
+
+```text
+[LoadEirika] = [LoadFace][0x02][0x1]
+```
+
+Now, instead of needing to type out \[LoadFace\]\[0x02\]\[0x1\] every time, we can simply use \[LoadEirika\].
+
