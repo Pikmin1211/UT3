@@ -7,6 +7,7 @@
 \[A\] - Prompts for an A press before continuing.  
 \[OpenPosition\] - Set the current position to the specified one.  
 \[LoadFace\] - Load a character portrait at the current position. Follow this command with the ID of the portrait to be loaded and \[0x1\] \(the ID +0x100\). For example, to load portrait ID 0x2, use \[LoadFace\]\[0x2\]\[0x1\].  
+\[MovePosition\] - Move the character portrait at the current position to the specified position.  
 \[ClearFace\] - Remove the character portrait at the current position.  
 \[ToggleSmile\] - Set the character portrait at the current position to smile or to stop smiling.  
 \[ToggleMouthMove\] - Set the character portrait at the current position to stop or continue moving their mouth while speaking.  
@@ -14,7 +15,7 @@
 
 ## Positional Control Codes
 
-The \[OpenPosition\] code expects one of 8 positions on the screen for loading character portraits, speech bubbles, etc. The possible positions, in order of their appearance on screen from left to right, are: FarFarLeft, FarLeft, MidLeft, Left, Right, MidRight, FarRight, FarFarRight. For example, to set the current position to the MidLeft of the screen, use \[OpenMidLeft\].
+The \[OpenPosition\] and \[MovePosition\] codes expects one of 8 positions on the screen for loading character portraits, speech bubbles, etc. The possible positions, in order of their appearance on screen from left to right, are: FarFarLeft, FarLeft, MidLeft, Left, Right, MidRight, FarRight, FarFarRight. For example, to set the current position to the MidLeft of the screen, use \[OpenMidLeft\]. The "FarFar" positions are offscreen and can be used to have a character portrait exit stage left or right, or to display text coming from outside the visable area.
 
 ## Custom Control Codes \(ParseDefinitions.txt\)
 
