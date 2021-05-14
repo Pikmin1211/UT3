@@ -15,9 +15,9 @@
 
 ## Positional Control Codes
 
-The \[OpenPosition\] and \[MovePosition\] codes expects one of 8 positions on the screen for loading character portraits, speech bubbles, etc. The possible positions, in order of their appearance on screen from left to right, are: FarFarLeft, FarLeft, MidLeft, Left, Right, MidRight, FarRight, FarFarRight. For example, to set the current position to the MidLeft of the screen, use \[OpenMidLeft\].   
+The \[OpenPosition\] and \[MovePosition\] codes expect one of 8 positions on the screen for loading character portraits, speech bubbles, etc. The possible positions, in order of their appearance on screen from left to right, are: FarFarLeft, FarLeft, MidLeft, Left, Right, MidRight, FarRight, FarFarRight. For example, to set the current position to the MidLeft of the screen, use \[OpenMidLeft\].   
 The "FarFar" positions are offscreen and can be used to have a character portrait exit stage left or right, or to display text coming from outside the visible area.  
-Do note that characters loaded to the right side of the screen will face left, and vice versa. To display a character on one side of the screen facing the other position, you will need to load them on the other side and then move them afterwards. To have them turn back around, simply clear and reload the portrait.
+Do note that character portraits loaded to the right side of the screen will face left, and vice versa. To display a character portrait on one side of the screen facing the other way around, you will need to load them on the other side and then move them to the desired position afterwards. To have them turn back around, simply clear and reload the portrait.
 
 ## Custom Control Codes \(ParseDefinitions.txt\)
 
