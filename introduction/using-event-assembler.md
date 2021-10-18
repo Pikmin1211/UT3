@@ -38,7 +38,7 @@ BYTE 0x0
 
 ## \#define
 
-Define is by far **one of your most powerful assets**. So what does it do? Well, there are many ROM locations of interest to us - the table for class data, for example. There are also values of interest, such as IDs for characters in the character table, and so on. Obviously, it would be tiresome to have to refer to a list for this sort of thing every time we needed to refer to it. Instead of memorizing these things, we can instead use define to be able to **refer to them as whatever we like!**
+Define is by far **one of your most powerful assets**. So what does it do? Well, there are many ROM locations of interest to us - the table for class data, for example. There are also values of interest, such as IDs for characters in the character table, and so on. Obviously, it would be tiresome to have to refer to a list for this sort of thing every time we needed it. Instead of memorizing these things, we can instead use definitions to be able to **refer to them as whatever we like!**
 
 A definition allows us to **alias a sequence of characters as something else**. What that means is that I can make a string of text refer to some value. For example, if I wanted to refer to the Knight class, instead of manually finding the ID for the class each time, I can define the word "Knight" as the ID for the class. Then, in any situation I need the ID, **I can just write "Knight" instead!**
 
