@@ -4,11 +4,11 @@ These are unit groups and are the main way to spawn in units on the map.
 It should look like this:
 
 ```text
-SomeUnitGroup:
+SomeUnitGroup: // just one unit here
 UNIT charID classID leaderID Level(level,allegiance,autolevel) [x,y] flags 0x0 numberOfREDAs pointerToREDAs [item1, item2, item3, item4] [ai1, ai2, ai3, ai4]
 UNIT
 ```
-
+UNIT must be placed at the end of every unit block to indicate that it has ended. 
 charID is the loaded unit's character ID, classID is what class they load as, and leaderID
 is the charID of the unit's leader. leaderID is only used for AI, so it does nothing for player units.
 

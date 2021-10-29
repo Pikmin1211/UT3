@@ -4,9 +4,7 @@ TurnBasedEvents are, as you'd guess, events that occur based on specified turns.
 They look like this:
 
 ```text
-TurnBasedEvents:
 TURN flagID pointer [startTurn, endTurn] phase
-END_MAIN
 ```
 
 phase indicates what phase the event takes place on (0 for Player Phase, 8 for Enemy Phase,

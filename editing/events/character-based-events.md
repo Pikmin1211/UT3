@@ -3,9 +3,7 @@
 CharacterBasedEvents are Talk conversations formulated like this:
 
 ```text
-CharacterBasedEvents:
 CHAR flagID eventPointer [char1,char2] 0
-END_MAIN
 ```
 
 char1 is the unit that starts the talk, and char2 is the one that is talked to.
@@ -17,7 +15,7 @@ CharacterEvent(eventID,pointer,char1,char2)
 CharacterEventBothWays(eventID,eventPtr,char1,char2)
 ```
 
-Here's an example of what this may look like in an actual event file:
+Here's an example of what this may look like in an actual event:
 
 ```text
 CharacterBasedEvents:
