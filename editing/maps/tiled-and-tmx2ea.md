@@ -1,4 +1,4 @@
-# Maps
+# Tiled and tmx2ea
 
 ## Inserting Custom Maps
 
