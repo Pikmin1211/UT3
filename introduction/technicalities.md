@@ -10,6 +10,10 @@ The Game Boy Advance is a computer that elects to store and load data in little 
 
 ## Image palletes
 
+Normally, we would think of an image as a series of pixels with a specific color assigned to each one. However, Game Boy Advance graphics work a bit differently to this. Rather than a specific color assigned to each pixel, an index value is used instead. The colors that the image uses are all stored in one place somewhere else as a palette, and this value is used to index the palette to determine the color to use for that pixel.
+
+One palette contains 16 colors, but the first color is always treated as transparency. Any 8x8 tile can only use one 16-color palette in total, and there is a fairly strict limit on the number of palettes available for use at any given time for any given graphics, though it varies from case to case. For palette-indexed images, .png files work fine, but we need software that can properly handle palette-indexed images, such as [Usenti](http://www.coranac.com/projects/usenti/). Note also that due to this separation of graphics and palette, no palette is tied to any specific graphics and you can have multiple combinations of the same graphics and different palettes that produce valid images.
+
 ## Defining vs Labelling
 
 When using Event Assembler, there are two kinds of named values you work with: **Definitions** and **Labels**. Definitions are declared using `#define`, while labels are declared with a colon after their name. Labels represent variable locations in your ROM, which is especially useful when the amount of data before them and thus their actual location in the output ROM isn't necessarily always going to be the same.
