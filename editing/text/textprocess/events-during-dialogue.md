@@ -15,7 +15,7 @@ Hey, this song stinks![A][X]
 ```
 
 However, this requires a special event code to continue the text called TEXTCONT.
-Here's an example of what a music changing event would like:
+Here's an example of what a music changing event would look like:
 
 ```text
 TEXTSTART

@@ -14,7 +14,7 @@ AFEVs will run whenever the activationFlag is set, presuming their flagID isn't 
 AREA events will run whenever a unit steps in the zone described by its coordinates.
 corner1 is the top left corner, and corner2 is the bottom right corner.
 
-The common macros used for these are:
+Common macros used for these are:
 
 ```
 CauseGameOverIfLordDies
