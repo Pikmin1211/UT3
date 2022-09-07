@@ -8,6 +8,8 @@ The Game Boy Advance is a computer that elects to store and load data in little 
 
 ## Pointers, pointerization and dereferencing \(depointerization\)
 
+When running, the GBA needs some way to know where different information is stored in order to reference it when needed. To do this, we give its location as a pointer. A pointer is the memory address at which data is located at runtime. When it runs, the GBA maps the contents of the ROM to a section of memory starting at `0x08000000`. In effect, this makes pointers to data in ROM be the offset within the file + `0x08000000`. When we pointerize a value, this is the operation we are performing to it. To Event Assembler, label offsets are relative to the start of the file. Therefore, to get a pointer we add this value to a label. This is unintuitive and inconvenient to do every time, so the code `POIN` will automatically pointerize the value given to it.
+
 ## Image palletes
 
 Normally, we would think of an image as a series of pixels with a specific color assigned to each one. However, Game Boy Advance graphics work a bit differently to this. Rather than a specific color assigned to each pixel, an index value is used instead. The colors that the image uses are all stored in one place somewhere else as a palette, and this value is used to index the palette to determine the color to use for that pixel.
